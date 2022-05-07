@@ -12,37 +12,21 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			type: NavigationItemType.LINK,
 			icon: 'feather:home',
 			text: 'Home',
-			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+			href: '/',
 		},
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:copy',
 			text: 'Projects',
-			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+			href: '/projects',
 		},
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:smile',
 			text: 'About Me',
-			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+			href: '/timeline',
 		},
-	],
-	[
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:book',
-			text: 'Resume',
-			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
-			external: true,
-		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:github',
-			text: 'GitHub',
-			href: 'https://github.com/robertopablonoel',
-			external: true,
-		},
-	],
+	]
 ];
 
 export function useNavigation() {
