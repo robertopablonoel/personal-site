@@ -176,13 +176,17 @@ export function Dropdown({ children, items, position }: StandardProps) {
 															);
 
 														return (
-															<MenuLink
+															<StyledMenuItem
+																className="group"
 																$active={active}
 																href={item.href}
+																rel="noopener noreferrer"
 															>
-																<MenuButtonIcon icon={item.icon} />
+																<MenuButtonIcon
+																	icon={item.icon}
+																/>
 																{item.text}
-															</MenuLink>
+															</StyledMenuItem>
 														);
 												}
 											}}
