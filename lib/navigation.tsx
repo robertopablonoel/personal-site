@@ -19,13 +19,7 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			icon: 'feather:copy',
 			text: 'Projects',
 			href: '/projects',
-		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:smile',
-			text: 'About Me',
-			href: '/timeline',
-		},
+		}
 	]
 ];
 
