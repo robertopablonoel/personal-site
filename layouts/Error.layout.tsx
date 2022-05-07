@@ -19,7 +19,7 @@ const Container = styled.div(tw`
 
 export function ErrorLayout({ children, seo }: DefaultLayoutProps) {
 	const seoProps = useSeoProps({
-		title: 'nuro ─ Whoops!',
+		title: 'Roberto ─ Whoops!',
 		...seo,
 	});
 

@@ -18,42 +18,30 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 		},
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:edit-3',
-			text: 'Blog',
-			href: '/blog',
-		},
-		{
-			type: NavigationItemType.LINK,
 			icon: 'feather:copy',
 			text: 'Projects',
 			href: '/projects',
 		},
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:clock',
-			text: 'Timeline',
+			icon: 'feather:smile',
+			text: 'About Me',
 			href: '/timeline',
-		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:link',
-			text: 'Referrals',
-			href: '/referrals',
 		},
 	],
 	[
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:twitter',
-			text: 'Twitter',
-			href: 'https://twitter.com/nurodev',
+			icon: 'feather:book',
+			text: 'Resume',
+			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
 			external: true,
 		},
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:github',
 			text: 'GitHub',
-			href: 'https://github.com/nurodev',
+			href: 'https://github.com/robertopablonoel',
 			external: true,
 		},
 	],
@@ -73,24 +61,7 @@ export function useNavigation() {
 	}, [theme]);
 
 	const menuItems: NavigationItems = [
-		...staticMenuItems,
-		...(!loading && status
-			? [
-					[
-						{
-							type: NavigationItemType.LINK,
-							icon: (
-								<Status.Indicator
-									color={color}
-									pulse={status.discord_status !== 'offline'}
-								/>
-							),
-							text: 'Status',
-							href: '/status',
-						} as NavigationItem,
-					],
-			  ]
-			: []),
+		...staticMenuItems
 	];
 
 	const settingsItems: NavigationItems = [

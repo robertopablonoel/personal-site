@@ -15,7 +15,7 @@ const Main = styled.main(tw`flex flex-col justify-center sm:px-8`);
 
 export function BlogLayout({ children, seo }: PropsWithChildren<BlogLayoutProps>) {
 	const seoProps = useSeoProps({
-		title: 'nuro ─ blog',
+		title: 'Roberto ─ blog',
 		...seo,
 	});
 

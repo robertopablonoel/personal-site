@@ -1,76 +1,101 @@
 [
 	{
-		"date": "03-14-2022",
-		"title": "Started @ Wander",
-		"description": "Joined the Wander team",
+		"date": "08-02-2020",
+		"current": true,
+		"title": "Software Engineer @ Capital One",
+		"description": "Full time code monkey",
 		"icon": "feather:briefcase",
 		"link": {
-			"text": "Visit Wander",
-			"url": "https://wander.com/"
+			"text": "Visit capitalone.com",
+			"url": "https://capitalone.com/"
 		}
 	},
 	{
-		"date": "10-22-2021",
-		"title": "Launched nuro.dev",
-		"description": "Successfully launched my newly re-designed portfolio",
-		"icon": "feather:award"
-	},
-	{
-		"date": "03-15-2021",
-		"title": "Started @ Attio",
-		"description": "Joined the Attio team",
-		"icon": "feather:briefcase",
+		"date": "02-01-2021",
+		"title": "Lead Engineer @ Usic",
+		"description": "Part time code monkey",
+		"icon": "feather:music",
 		"link": {
-			"text": "Visit Attio",
-			"url": "https://attio.com/"
+			"text": "Visit usic.io",
+			"url": "https://usic.io/"
 		}
 	},
 	{
-		"date": "11-16-2020",
-		"title": "Started @ Aiming.pro",
-		"description": "Joined the Aiming.pro team",
-		"icon": "feather:briefcase",
+		"date": "12-01-2019",
+		"title": "Graduated from NYU Shanghai",
+		"description": "Graduated with majors in Computer Science and Finance",
+		"icon": "feather:award",
 		"link": {
-			"text": "Visit Aiming.pro",
-			"url": "https://aiming.pro/"
+			"text": "Visit shanghai.nyu.edu",
+			"url": "https://shanghai.nyu.edu/"
 		}
 	},
 	{
-		"date": "07-15-2020",
-		"title": "Graduated University!",
-		"description": "Successfully completed my Bachelor's Degree",
-		"icon": "feather:award"
-	},
-	{
-		"date": "10-11-2018",
-		"title": "First Developer Role",
-		"description": "Began an internship as a junior developer working at Stink Studios",
-		"icon": "feather:briefcase",
+		"date": "09-01-2019",
+		"title": "Research Analyst @ Red Pulse",
+		"description": "Covered private equity deals in Asia",
+		"icon": "feather:activity",
 		"link": {
-			"text": "Visit Stink Studios",
-			"url": "https://stinkstudios.com/"
+			"text": "Visit redpulse.com",
+			"url": "https://www.linkedin.com/company/red-pulse/"
 		}
 	},
 	{
-		"date": "11-04-2016",
-		"title": "First Job!",
-		"description": "Began my first part-time job as a junior service desk analyist at CreeperHost",
-		"icon": "feather:briefcase",
+		"date": "02-01-2019",
+		"title": "Business Intelligence @ Arcor",
+		"description": "Used data to sell Argentine candy in China",
+		"icon": "feather:bar-chart-2",
 		"link": {
-			"text": "Visit CreeperHost",
-			"url": "http://creeperhost.net/"
+			"text": "Visit arcor.com",
+			"url": "https://www.arcor.com/en/"
 		}
 	},
 	{
-		"date": "09-10-2016",
-		"title": "Start University",
-		"description": "Began studying Computer Games Programming at Staffordshire University",
+		"date": "06-01-2018",
+		"title": "Summer Analyst @ Merrill Lynch",
+		"description": "Learned how to pronouce finance the right way",
+		"icon": "feather:dollar-sign",
+		"link": {
+			"text": "Visit ml.com",
+			"url": "https://www.ml.com/"
+		}
+	},
+	{
+		"date": "09-01-2017",
+		"title": "Interned @ Arch Global Advisors",
+		"description": "Fell in love with code",
+		"icon": "feather:git-merge",
+		"link": {
+			"text": "Visit archglobaladvisors.com/",
+			"url": "https://archglobaladvisors.com/"
+		}
+	},
+	{
+		"date": "07-01-2017",
+		"title": "Interned @ Banco de Crédito del Peru",
+		"description": "Re-learned accounting in Spanish",
+		"icon": "feather:credit-card",
+		"link": {
+			"text": "Visit viabcp.com/",
+			"url": "https://www.viabcp.com/"
+		}
+	},
+	{
+		"date": "08-01-2015",
+		"title": "Started university",
+		"description": "Began studying at New York University Shanghai",
 		"icon": "feather:book"
 	},
 	{
-		"date": "08-09-1997",
+		"date": "10-11-1996",
+		"title": "Moved around... a lot",
+		"description": "I've lived in seven countries, and speak three languages",
+		"icon": "feather:map-pin"
+	},
+	{
+		"date": "10-10-1996",
 		"title": "Birthday!",
-		"description": "I was born the 9th of August 1997",
+		"description": "I was born the 10th of October 1996",
 		"icon": "feather:gift"
 	}
 ]

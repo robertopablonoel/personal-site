@@ -12,13 +12,13 @@ let redis;
  * Fetch Projects
  *
  * Make a GET request to the GitHub API to gather all repositories
- * under my `nurodev` username & then filter them down to only
+ * under my `Robertodev` username & then filter them down to only
  * include those that contain the `portfolio` topic
  *
  * @TODO Switch to v3 API using GraphQL to save over-fetching
  */
 async function fetchProjects(): Promise<Projects | null> {
-	const response = await fetch('https://api.github.com/users/nurodev/repos', {
+	const response = await fetch('https://api.github.com/users/robertonoel/repos', {
 		headers: {
 			...(process.env.GITHUB_PAT && {
 				authorization: `token ${process.env.GITHUB_PAT}`,
@@ -43,7 +43,6 @@ async function fetchProjects(): Promise<Projects | null> {
 
 	const projects: Projects = json
 		.map((repo) => {
-			if (!repo.topics.includes('portfolio')) return null;
 
 			if (repo.archived) return null;
 
@@ -90,15 +89,9 @@ async function fetchProjects(): Promise<Projects | null> {
  * from there first & if not makes a request to GitHub.
  */
 export async function getProjects(): Promise<Projects | Redirect> {
-	if (!redis) redis = new Redis(process.env.REDIS_URL);
 
 	try {
-		const cache: string | null = await redis.get('projects');
-		if (cache !== null) return JSON.parse(cache) as Projects;
-
 		const projects = await fetchProjects();
-
-		redis.set('projects', JSON.stringify(projects));
 
 		return projects;
 	} catch (err) {

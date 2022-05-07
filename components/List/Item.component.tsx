@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styled from '@emotion/styled';
 import tw from 'twin.macro';
 import { css } from '@emotion/react';
@@ -113,32 +112,16 @@ export function Item({ actions, children, description, icon, iconColor, title }:
 										</Action.Button>
 									);
 								case ListActionType.LINK:
-									if (action.external ?? true)
-										return (
-											<Action.Link
-												aria-label={action.label}
-												href={action.href}
-												key={index}
-												onClick={action.onClick}
-												rel="noopener noreferrer"
-												target="_blank"
-											>
-												<span tw="sr-only">{action.label}</span>
-												<Icon icon={action.icon} />
-											</Action.Link>
-										);
-
 									return (
-										<Link href={action.href} passHref>
-											<Action.Link
-												aria-label={action.label}
-												key={index}
-												onClick={action.onClick}
-											>
-												<span tw="sr-only">{action.label}</span>
-												<Icon icon={action.icon} />
-											</Action.Link>
-										</Link>
+										<Action.Link
+											aria-label={action.label}
+											href={action.href}
+											key={index}
+											target="_blank"
+										>
+											<span tw="sr-only">{action.label}</span>
+											<Icon icon={action.icon} />
+										</Action.Link>
 									);
 							}
 						})}

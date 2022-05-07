@@ -41,7 +41,7 @@ If the 3rd party service goes down will my content somehow still be magically se
 
 Some may call me cheap for this but another goal for my personal website is to be as cheap as possible. As of writing my website costs me $20/year to run. That's it.
 
-How? Simple. $20/year for a domain, code hosted GitHub & deployed to [Vercel](https://vercel.com/home?utm_source=nuro&utm_campaign=oss). It's that cheap & I want to keep it that way.
+How? Simple. $20/year for a domain, code hosted GitHub & deployed to [Vercel](https://vercel.com/home?utm_source=Roberto&utm_campaign=oss). It's that cheap & I want to keep it that way.
 
 So, the idea of paying for another service, however nice a lot of them look, is just not for me. So I wanted to find an alternative that would serve the same function I need it to but for zero additional cost.
 
@@ -49,7 +49,7 @@ So, the idea of paying for another service, however nice a lot of them look, is 
 
 ---
 
-If you'd rather just look at the final code to see how it works, go check the [`projects.ts`](https://github.com/nurodev/nuro.dev/blob/667b055043b94d894172085fee794c3849a3f25f/lib/projects.ts) file in my websites GitHub repository.
+If you'd rather just look at the final code to see how it works, go check the [`projects.ts`](https://github.com/Robertodev/Roberto.dev/blob/667b055043b94d894172085fee794c3849a3f25f/lib/projects.ts) file in my websites GitHub repository.
 
 The short version of how it works is this: Using [topics on GitHub](https://github.com/topics) you can filter what content you do & don't want to show. In my case I have given all my chosen repositories a `portfolio` topic & that will make the repository show up on my portfolio page.
 

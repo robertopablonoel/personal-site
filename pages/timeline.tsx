@@ -10,6 +10,8 @@ import type { GetStaticProps } from 'next';
 
 import type { Timeline, TimelineEvent } from '~/types';
 
+import ReactRoundedImage from "react-rounded-image";
+
 interface TimelineProps {
 	timeline?: Timeline;
 }
@@ -100,11 +102,49 @@ const EventLinkButtonIcon = styled(Icon)(tw`
 	ml-3
 `);
 
+const AboutCard = styled.div(tw`
+	relative flex items-center space-x-3 \
+	bg-gray-50 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 \
+	backdrop-filter backdrop-blur-sm \
+	px-2 py-3 \
+	border-2 border-gray-200 dark:border-gray-600 \
+	rounded-lg
+`);
+
+const AboutBody = styled.div(tw`
+	min-w-0 flex-1
+`);
+
+const ImageContainer = styled.div(tw`
+	relative flex items-center space-x-3 \
+	place-content-center
+`);
+
+const AboutTitle = styled.h1`
+	${tw`
+		flex flex-wrap justify-center \
+		mb-2 \
+		text-gray-500 dark:text-white \
+		text-lg tracking-tight font-bold
+	`}
+
+	div {
+		${tw`mt-2 sm:mt-0`}
+	}
+`;
+
+const AboutDescription = styled.p(tw`
+	justify-center text-center\
+	text-gray-300 dark:text-gray-200\
+	text-[17px] \
+	m-2
+
+`);
+
+
 export const getStaticProps: GetStaticProps<TimelineProps> = async () => {
 	const { default: rawTimeline } = await import('~/data/timeline.json');
-	const timeline = (rawTimeline as Array<TimelineEvent>).sort(
-		(a, b) => +new Date(b.date) - +new Date(a.date),
-	);
+	const timeline = (rawTimeline as Array<TimelineEvent>);
 
 	return {
 		props: {
@@ -121,16 +161,43 @@ export default function TimelinePage({ timeline: rawTimeline }: TimelineProps) {
 	}));
 
 	return (
-		<Layout.Default seo={{ title: 'nuro ─ timeline' }}>
+		<Layout.Default seo={{ title: 'Roberto ─ timeline' }}>
 			<Container>
 				<Content>
 					<List role="list">
+						<ListItem>
+							<ListItemContainer tw="">
+								<ImageContainer>
+									<ReactRoundedImage
+										image='/me.jpeg'
+										roundedColor="rgba(0, 114, 255, var(--tw-text-opacity))"
+										imageWidth="250"
+										imageHeight="250"
+										roundedSize="5"
+										borderRadius="70"
+									/>
+								</ImageContainer>
+							</ListItemContainer>
+						</ListItem>
+						<ListItem>
+							<ListItemContainer tw="">
+								<AboutCard>
+									<AboutBody>
+										<AboutTitle>
+											<span>About Me</span>
+										</AboutTitle>
+										<AboutDescription>Hi, I&apos;m Roberto, I currently work as a Software Engineer at Capital One. I&apos;m fluent in several backend / frontend frameworks,
+											and have deep experience with AWS from a DevOps and Network Automation perspective.
+											I have also worked on several side projects in the Web3 space, having launched NFTs on the Ethereum and Solidity blockchains.
+										</AboutDescription>
+									</AboutBody>
+								</AboutCard>
+							</ListItemContainer>
+						</ListItem>
 						{timeline.map((event, index) => (
 							<ListItem key={event.title}>
 								<ListItemContainer tw="">
-									{index !== timeline.length - 1 ? (
-										<TimelineConnector aria-hidden="true" />
-									) : null}
+									<TimelineConnector aria-hidden="true" />
 
 									<EventCard>
 										<EventIconContainer>
@@ -142,7 +209,10 @@ export default function TimelinePage({ timeline: rawTimeline }: TimelineProps) {
 												<span>{event.title}</span>
 												<Spacer />
 												<Pill.Date small={true}>
-													{format(event.date, 'PPP')}
+													{!event.current && (
+														format(event.date, 'PP'))}
+													{event.current && (
+														format(event.date, 'PP') + " — Now")}
 												</Pill.Date>
 											</Title>
 

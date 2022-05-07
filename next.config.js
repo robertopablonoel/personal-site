@@ -18,6 +18,8 @@ module.exports = {
 			'source.unsplash.com',
 			'images.unsplash.com',
 		],
+		loader: 'akamai',
+		path: '',
 	},
 	// Inspired by: https://github.com/leerob/leerob.io/blob/main/next.config.js#L44-L81
 	async headers() {
@@ -60,6 +62,10 @@ module.exports = {
 				'react-dom': 'preact/compat',
 			});
 		}
+		config.module.rules.push({
+			test: /\.pdf$/i,
+			type: 'asset/source'
+		})
 
 		return config;
 	},

@@ -22,7 +22,7 @@ const Content = styled.div(tw`
 
 const Title = styled.h1(tw`
 	text-gray-500 dark:text-white \
-	text-5xl sm:text-6xl md:text-6xl lg:text-8xl \
+	text-5xl sm:text-6xl md:text-6xl lg:text-6xl \
 	tracking-tight font-extrabold
 `);
 
@@ -64,9 +64,9 @@ const ActionText = styled.span(tw`
 const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
-		href: '/blog',
-		icon: <ActionIcon icon="feather:edit-3" />,
-		text: 'Blog',
+		href: '/timeline',
+		icon: <ActionIcon icon="feather:smile" />,
+		text: 'About Me',
 	},
 	{
 		type: NavigationItemType.LINK,
@@ -77,21 +77,28 @@ const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
 		external: true,
-		href: 'https://github.com/nurodev',
+		href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+		icon: <ActionIcon icon="feather:book" />,
+		text: 'Resume',
+	},
+	{
+		type: NavigationItemType.LINK,
+		external: true,
+		href: 'https://github.com/robertopablonoel',
 		icon: <ActionIcon icon="feather:github" />,
 		text: 'GitHub',
-	},
+	}
 ];
 
 export default function HomePage() {
 	const { animations: animations } = usePersistantState().get();
 
 	const today = new Date();
-	const birthday = new Date('1997-08-09');
+	const birthday = new Date('1996-10-10');
 	const age = differenceInYears(today, birthday);
 	const isBirthday = isSameDay(today, birthday) && isSameMonth(today, birthday);
 
-	const description = `I am a ${age} year old software engineer & games developer`;
+	const description = `I am a ${age} year old software engineer working in FinTech`;
 
 	return (
 		<Layout.Default>
@@ -101,13 +108,13 @@ export default function HomePage() {
 					{animations ? (
 						<Transition duration={1000}>
 							<Title>
-								Hey <Wave>👋</Wave> I&apos;m Ben, <LineBreak />a{' '}
+								Hey <Wave>👋</Wave> I&apos;m Roberto, <LineBreak />a{' '}
 								<StyledPill>developer</StyledPill>
 							</Title>
 						</Transition>
 					) : (
 						<Title>
-							Hey <Wave>👋</Wave> I&apos;m Ben, <LineBreak />a{' '}
+							Hey <Wave>👋</Wave> I&apos;m Roberto, <LineBreak />a{' '}
 							<StyledPill>developer</StyledPill>
 						</Title>
 					)}

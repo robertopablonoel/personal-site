@@ -5,13 +5,15 @@ import { Transition as HeadlessUiTransition } from '@headlessui/react';
 import type { WithChildren, WithProps } from '~/types';
 
 type TransitionProps = WithChildren &
+	// eslint-disable-next-line
+	// @ts-ignore
 	WithProps<typeof HeadlessUiTransition> & {
 		delay?: number;
 		duration?: number;
 		show?: boolean;
 	};
 
-const StyledTransition = styled(HeadlessUiTransition)<Pick<TransitionProps, 'delay' | 'duration'>>`
+const StyledTransition = styled(HeadlessUiTransition) <Pick<TransitionProps, 'delay' | 'duration'>>`
 	&.enter {
 		${tw`transition ease-in-out`}
 
@@ -45,6 +47,8 @@ export function Transition({ children, delay = 0, duration = 300, show = true }:
 		<StyledTransition
 			delay={delay}
 			duration={duration}
+			// eslint-disable-next-line
+			// @ts-ignore
 			appear={true}
 			enter="enter"
 			enterFrom="enterFrom"

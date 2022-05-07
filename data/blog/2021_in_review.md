@@ -79,7 +79,7 @@ As such there have been a number of larger purchases made this year that I was f
 
 ### :computer: Macbook
 
-After years of waiting I finally purchased [a new Macbook](https://twitter.com/nurodev/status/1463474778304622597?s=20).
+After years of waiting I finally purchased [a new Macbook](https://twitter.com/Robertodev/status/1463474778304622597?s=20).
 
 Prior to this I have been using a 2016 15" Macbook Pro which has served me very well over the years but has finally begun to show its age. Everything from general performance degradation, to battery life being less than a few hours (Even after a recent battery replacement). However the most fundamental issue with the device, as those who may already be able to guess, is the keyboard.
 
@@ -91,7 +91,7 @@ I have no benchmarks to validate it but this device with its 16 CPU cores & 16 G
 
 ### :satellite: Starlink
 
-The second big purchase of the year that came in at the very end was finally being [given access to the Starlink beta](https://twitter.com/nurodev/status/1468695438098374656?s=20).
+The second big purchase of the year that came in at the very end was finally being [given access to the Starlink beta](https://twitter.com/Robertodev/status/1468695438098374656?s=20).
 
 For those unaware I live on a farm in a very isolated location and as such to get anything faster than ADSL I would need to pay BT around £20,000 to install a fiber cable to our location just to upgrade less than a handful of households. Since that wasn't, and probably never will be an option, the other options were wireless or satellite broadband. There are no WISP's in my area so that sadly rules them out & standard satellite broadband is usually pretty slow & has increased latency. As such, Starlink seemed like my best option.
 
@@ -100,7 +100,7 @@ A few hundred pounds & a few days of shipping from California later I finally re
 ![A photo of my Starlink kit delivered outside my front door](/blog/2021_in_review/starlink_box.jpg 'A photo of my Starlink kit delivered outside my front door')
 ![A photo of my Starlink kit all set up outside my front door & aiming at the sky](/blog/2021_in_review/starlink_set_up.jpg 'A photo of my Starlink kit all set up outside my front door & aiming at the sky')
 
-This was initially just to get the kit up & running & see how the service was, even while partially obstructed. [The end results were pretty good](https://twitter.com/nurodev/status/1472865360122634244) with speeds almost reaching 300 Mbps download & 30 Mbps upload. A huge upgrade over my old ADSL connection offering less than 15 Mbps download and less than 1 Mbps upload.
+This was initially just to get the kit up & running & see how the service was, even while partially obstructed. [The end results were pretty good](https://twitter.com/Robertodev/status/1472865360122634244) with speeds almost reaching 300 Mbps download & 30 Mbps upload. A huge upgrade over my old ADSL connection offering less than 15 Mbps download and less than 1 Mbps upload.
 
 ### :zap: Tesla
 

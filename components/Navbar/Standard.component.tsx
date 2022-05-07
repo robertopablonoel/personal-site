@@ -21,6 +21,8 @@ export function Standard() {
 	const { menu, settings } = useNavigation();
 
 	return (
+		// eslint-disable-next-line
+		// @ts-ignore
 		<StyledDisclosure as="nav">
 			<Container>
 				<Content>

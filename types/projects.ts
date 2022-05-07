@@ -112,6 +112,7 @@ export interface Project {
 	language?: string;
 	name: string;
 	post?: string;
+	paper?: string;
 	template?: boolean;
 	url: string;
 }

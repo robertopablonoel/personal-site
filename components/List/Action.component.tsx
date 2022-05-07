@@ -25,3 +25,5 @@ const ButtonStyles = css`
 export const Button = styled.button(ButtonStyles);
 
 export const Link = styled.a(ButtonStyles);
+
+export const Frame = styled.iframe(ButtonStyles);
