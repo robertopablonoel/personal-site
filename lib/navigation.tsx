@@ -10,6 +10,24 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 	[
 		{
 			type: NavigationItemType.LINK,
+			icon: 'feather:home',
+			text: 'Home',
+			href: '/',
+		},
+		{
+			type: NavigationItemType.LINK,
+			icon: 'feather:copy',
+			text: 'Projects',
+			href: '/projects',
+		},
+		{
+			type: NavigationItemType.LINK,
+			icon: 'feather:smile',
+			text: 'About Me',
+			href: '/timeline',
+		},
+		{
+			type: NavigationItemType.LINK,
 			icon: 'feather:book',
 			text: 'Resume',
 			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
