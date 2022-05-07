@@ -13,6 +13,7 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			icon: 'feather:smile',
 			text: 'About Me',
 			href: '/timeline',
+			external: true,
 		},
 		{
 			type: NavigationItemType.LINK,
