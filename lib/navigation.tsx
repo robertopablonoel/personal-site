@@ -1,10 +1,8 @@
 import { useMemo } from 'react';
 import { useTheme } from 'next-themes';
-
-import { Status } from '~/components';
 import { usePersistantState, useStatus } from '~/lib';
 
-import { DiscordStatus, NavigationItemType, Theme } from '~/types';
+import { NavigationItemType, Theme } from '~/types';
 
 import type { NavigationItem, NavigationItems } from '~/types';
 
@@ -50,7 +48,6 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 export function useNavigation() {
 	const state = usePersistantState();
 	const { animations: background, sound } = state.get();
-	const { color, loading, status } = useStatus();
 	const { theme, setTheme } = useTheme();
 
 	const isDark = useMemo(() => {
