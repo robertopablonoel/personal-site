@@ -26,23 +26,7 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			text: 'About Me',
 			href: '/timeline',
 		},
-	],
-	[
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:book',
-			text: 'Resume',
-			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
-			external: true,
-		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:github',
-			text: 'GitHub',
-			href: 'https://github.com/robertopablonoel',
-			external: true,
-		},
-	],
+	]
 ];
 
 export function useNavigation() {
@@ -58,6 +42,7 @@ export function useNavigation() {
 	}, [theme]);
 
 	const menuItems: NavigationItems = [
+		...staticMenuItems
 	];
 
 	const settingsItems: NavigationItems = [
