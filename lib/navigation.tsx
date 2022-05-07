@@ -10,17 +10,19 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 	[
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:home',
-			text: 'Home',
-			href: '/',
+			icon: 'feather:book',
+			text: 'Resume',
+			href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+			external: true,
 		},
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:copy',
-			text: 'Projects',
-			href: '/projects',
-		}
-	]
+			icon: 'feather:github',
+			text: 'GitHub',
+			href: 'https://github.com/robertopablonoel',
+			external: true,
+		},
+	],
 ];
 
 export function useNavigation() {
