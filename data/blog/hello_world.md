@@ -27,7 +27,7 @@ So, having been a few years since my last portfolio website launch I decided to 
 
 ---
 
-The [project](https://github.com/Robertodev/Roberto.dev) built using the following tools & frameworks:
+The [project](https://github.com/Robertodev/robertonoel.com) built using the following tools & frameworks:
 
 -   :atom_symbol: [React](https://reactjs.org/) / [Preact](https://preactjs.com/) (For Production)
 -   :muscle: [Next.js](https://nextjs.org/)
@@ -244,4 +244,4 @@ I will always try to improve accessibility where possible. If you feel I am miss
 
 And with all of that, we have the final result of what you are looking at right now!
 
-![A screenshot of Roberto.dev](/blog/hello_world/screenshot.png 'A screenshot of Roberto.dev')
+![A screenshot of robertonoel.com](/blog/hello_world/screenshot.png 'A screenshot of robertonoel.com')

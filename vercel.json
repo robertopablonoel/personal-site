@@ -1,7 +1,7 @@
 {
 	"$schema": "https://openapi.vercel.sh/vercel.json",
 	"version": 2,
-	"alias": "Roberto.dev",
+	"alias": "robertonoel.com",
 	"cleanUrls": true,
 	"public": true,
 	"regions": [

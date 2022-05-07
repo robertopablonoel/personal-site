@@ -1,10 +1,10 @@
 {
 	"private": true,
-	"name": "Roberto.dev",
+	"name": "robertonoel.com",
 	"version": "2.1.1",
-	"description": "Personal Website for Roberto.dev",
-	"repository": "https://github.com/Robertodev/Roberto.dev.git",
-	"author": "Robertodev <me@Roberto.dev>",
+	"description": "Personal Website for robertonoel.com",
+	"repository": "https://github.com/Robertodev/robertonoel.com.git",
+	"author": "Robertodev <me@robertonoel.com>",
 	"license": "MIT",
 	"packageManager": "yarn@3.2.0",
 	"prettier": {
