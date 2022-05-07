@@ -50,10 +50,14 @@ export function useNavigation() {
 	const { animations: background, sound } = state.get();
 	const { theme, setTheme } = useTheme();
 
-	const isDark = true;
+	const isDark = useMemo(() => {
+		if (theme === Theme.SYSTEM)
+			return window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+		return theme === Theme.DARK;
+	}, [theme]);
 
 	const menuItems: NavigationItems = [
-		...staticMenuItems
 	];
 
 	const settingsItems: NavigationItems = [
