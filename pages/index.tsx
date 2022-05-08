@@ -77,7 +77,7 @@ const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
 		external: true,
-		href: 'https://drive.google.com/file/d/1xPbrD7gIdmDoR4fIfyzVheBkp3dhXTV_/view?usp=sharing',
+		href: '/Roberto_Noel_Resume_2022.pdf',
 		icon: <ActionIcon icon="feather:book" />,
 		text: 'Resume',
 	},

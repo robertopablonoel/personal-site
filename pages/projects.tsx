@@ -34,6 +34,12 @@ export default function ProjectsPage({ projects: serialisedProjects }: ProjectPr
 			icon: "🏘"
 		},
 		{
+			description: "Artist discovery tool for record labels using Spotify data.",
+			name: "Usic",
+			url: "https://github.com/UsicTeamInc",
+			icon: "🎸"
+		},
+		{
 			description: "Calculates crypto exchange to buy from depending on quantity.",
 			name: "Best Execution Calculator",
 			url: "https://github.com/robertopablonoel/best-execution-calc",
@@ -41,7 +47,7 @@ export default function ProjectsPage({ projects: serialisedProjects }: ProjectPr
 		},
 		{
 			description: "Generative machine learning algorithm for ByteBeat music generation.",
-			paper: 'https://drive.google.com/file/d/16UHw7i8-EDa5j6HTSu22miOZHB1Fb3e1/view?usp=sharing',
+			paper: '/GeneticAlgo.pdf',
 			name: "Genetic Algorithm for ByteBeat Music",
 			url: "https://github.com/robertopablonoel/ByteBeat",
 			icon: "🧬"

@@ -4,21 +4,13 @@
 		"current": true,
 		"title": "Software Engineer @ Capital One",
 		"description": "Full time code monkey",
-		"icon": "feather:briefcase",
-		"link": {
-			"text": "Visit capitalone.com",
-			"url": "https://capitalone.com/"
-		}
+		"icon": "feather:briefcase"
 	},
 	{
 		"date": "02-01-2021",
 		"title": "Lead Engineer @ Usic",
 		"description": "Part time code monkey",
-		"icon": "feather:music",
-		"link": {
-			"text": "Visit usic.io",
-			"url": "https://usic.io/"
-		}
+		"icon": "feather:music"
 	},
 	{
 		"date": "12-01-2019",
@@ -64,11 +56,7 @@
 		"date": "09-01-2017",
 		"title": "Interned @ Arch Global Advisors",
 		"description": "Fell in love with code",
-		"icon": "feather:git-merge",
-		"link": {
-			"text": "Visit archglobaladvisors.com/",
-			"url": "https://archglobaladvisors.com/"
-		}
+		"icon": "feather:git-merge"
 	},
 	{
 		"date": "07-01-2017",
